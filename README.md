@@ -10,3 +10,6 @@ I'm using this opportunity to build an awesome website to showcase my projects a
 
 
 In the meantime, if you're interested in connecting, discussing tech projects, or reviewing my GitHub repositories, please feel free to take a look at them or contact me! 
+
+## Ok, but why? 🤔
+I built another website using vanilla HTML, CSS, and Javascript. I want to learn more so my personal website will be built using bootstrap and react.js.

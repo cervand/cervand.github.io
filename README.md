@@ -13,4 +13,4 @@ In the meantime, if you're interested in connecting, discussing tech projects, o
 
 ## Ok, but why? 🤔
 I built another website using vanilla HTML, CSS, and Javascript. I want to learn more so my personal website will be built using bootstrap and react.js.
-Stay tuned folks!
+I added this text so I can reauthenticate my account on GitHub. 

@@ -9,12 +9,7 @@ function TabContent({ activeTab }) {
     <Paper 
       p="xl" 
       radius="md" 
-      style={{
-        border: '1px solid #e0e0e0',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)',
-        backgroundColor: 'white',
-        padding: '24px'
-      }}
+      bg="white" 
     >
       {activeTab === 'experience' && <ExperienceTab />}
       {activeTab === 'about' && <AboutTab />}

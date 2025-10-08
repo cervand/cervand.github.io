@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { MantineProvider, AppShell } from '@mantine/core';
 import '@mantine/core/styles.css';
 import Navbar from './components/NavBar';
+import MobileMenu from './components/MobileMenu';
 import TabContent from './components/TabContent';
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
         </AppShell.Header>
 
         <AppShell.Aside p="md">
-          <Navbar.MobileMenu 
+          <MobileMenu 
             activeTab={activeTab} 
             setActiveTab={(value) => {
               setActiveTab(value);

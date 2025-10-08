@@ -1,6 +1,6 @@
 // src/App.jsx
 import { useState } from 'react';
-import { MantineProvider, AppShell } from '@mantine/core';
+import { MantineProvider, AppShell, Grid } from '@mantine/core';
 import '@mantine/core/styles.css';
 import Navbar from './components/NavBar';
 import MobileMenu from './components/MobileMenu';
@@ -14,10 +14,15 @@ function App() {
   const theme = {
     colors: {
       brand: ['#FFFFFF', '#F5F5F5', '#EBEBEB', '#D6D6D6', '#C2C2C2', '#A3A3A3', '#858585', '#666666', '#383838', '#000000'],
+      gray: ['#c1c1c1', '#b0b0b0', '#a0a0a0', '#909090', '#808080',
+             '#707070', '#606060', '#505050', '#404040', '#303030'
+      ],
+      // Add other custom colors if needed
     },
     primaryColor: 'brand',
     black: '#000',
     white: '#fff',
+   
   };
 
   return (
@@ -40,7 +45,7 @@ function App() {
           />
         </AppShell.Header>
 
-        <AppShell.Aside p="md">
+        <AppShell.Aside bg="transparent">
           <MobileMenu 
             activeTab={activeTab} 
             setActiveTab={(value) => {

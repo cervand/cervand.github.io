@@ -6,7 +6,7 @@ function AboutTab() {
     <Stack>
       <Title order={2} mb="md" c="brand.2">About</Title>
       <Text c="brand.2">
-        Information about me and my background will be displayed here.
+        Someone excited to work hard on becoming a better engineer.
       </Text>
     </Stack>
   );

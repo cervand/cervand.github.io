@@ -2,19 +2,13 @@ import { Box, Tabs } from '@mantine/core';
 
 function MobileMenu({ activeTab, setActiveTab }) {
   return (
-    <Box
-      h="100%"
-      bg="white"
-      ml="auto"
-      mt="md"
-      mr="xs"
-    >
+    <Box h="100%" bg="brand.8" ml="auto" mt="md" mr="xs">
       <Tabs
         value={activeTab}
         onChange={setActiveTab}
         orientation="vertical"
         variant="pills"
-        color="brand.9"
+        color="brand.1"
       >
         <Tabs.List>
           <Tabs.Tab value="experience" mb="sm">Experience</Tabs.Tab>

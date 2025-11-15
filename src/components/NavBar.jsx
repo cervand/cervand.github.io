@@ -3,11 +3,25 @@ import { Group, Burger, Tabs, Title } from '@mantine/core';
 
 function NavBar({ opened, setOpened, activeTab, setActiveTab }) {
   return (
-    <Group justify="space-between" align="center" px="md" py="sm">
-      <Title order={3} fw={700} c="brand.1">
+    <Group 
+      justify="space-between" 
+      align="flex-end" 
+      px="md" 
+      py="sm"
+      h="100%"  
+      bg="brand.0"
+      c="brand.2"
+    >
+      <Title order={3} fw={700}>
         Andres Cervantes
       </Title>
-      <Tabs value={activeTab} onChange={setActiveTab} visibleFrom="sm" variant='pills' color="brand.1">
+      <Tabs 
+        value={activeTab} 
+        onChange={setActiveTab} 
+        visibleFrom="sm"
+        variant="pills"
+        color="brand.1"
+      >
         <Tabs.List>
           <Tabs.Tab value="experience">Experience</Tabs.Tab>
           <Tabs.Tab value="about">About</Tabs.Tab>

@@ -9,7 +9,7 @@ function TabContent({ activeTab }) {
     <Paper 
       p="xl" 
       radius="md" 
-      bg="white" 
+      bg="brand.0" 
     >
       {activeTab === 'experience' && <ExperienceTab />}
       {activeTab === 'about' && <AboutTab />}

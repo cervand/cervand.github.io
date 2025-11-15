@@ -1,6 +1,6 @@
 // src/App.jsx
 import { useState } from 'react';
-import { MantineProvider, AppShell, Grid } from '@mantine/core';
+import { MantineProvider, AppShell, Grid, Container } from '@mantine/core';
 import '@mantine/core/styles.css';
 import Navbar from './components/NavBar';
 import MobileMenu from './components/MobileMenu';
@@ -13,7 +13,7 @@ function App() {
   // Custom black & white theme
   const theme = {
     colors: {
-      brand: ['#FFFFFF', '#000000ff', '#EBEBEB', '#D6D6D6', '#C2C2C2', '#A3A3A3', '#858585', '#666666', '#383838', '#000000'],
+      brand: ['#1f1f1fff', '#008a10ff', '#EBEBEB', '#D6D6D6', '#C2C2C2', '#A3A3A3', '#858585', '#666666', '#383838', '#000000'],
       gray: ['#c1c1c1', '#b0b0b0', '#a0a0a0', '#909090', '#808080',
              '#707070', '#606060', '#505050', '#404040', '#303030'
       ],
@@ -36,7 +36,9 @@ function App() {
         }}
         padding="md"
       >
-        <AppShell.Header style={{ borderBottom: '1px solid #e0e0e0' }}>
+        <AppShell.Header
+          style={{ borderBottom: 0 }}
+        >
           <Navbar 
             opened={opened} 
             setOpened={setOpened} 
@@ -55,8 +57,10 @@ function App() {
           />
         </AppShell.Aside>
 
-        <AppShell.Main>
-          <TabContent activeTab={activeTab} />
+        <AppShell.Main bg="brand.0">
+          <Container size="md" px="md" py="xl">
+            <TabContent activeTab={activeTab} />
+          </Container>
         </AppShell.Main>
       </AppShell>
     </MantineProvider>

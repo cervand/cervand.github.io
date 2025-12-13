@@ -2,7 +2,7 @@ import { Box, Tabs } from '@mantine/core';
 
 function MobileMenu({ activeTab, setActiveTab }) {
   return (
-    <Box h="100%" bg="brand.8" ml="auto" mt="md" mr="xs">
+    <Box h="100%" bg="brand.8" p="md">
       <Tabs
         value={activeTab}
         onChange={setActiveTab}

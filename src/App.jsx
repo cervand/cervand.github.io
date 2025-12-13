@@ -1,13 +1,14 @@
 // src/App.jsx
 import { useState } from 'react';
-import { MantineProvider, AppShell, Grid, Container } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { MantineProvider, AppShell, Container } from '@mantine/core';
 import '@mantine/core/styles.css';
 import Navbar from './components/NavBar';
 import MobileMenu from './components/MobileMenu';
 import TabContent from './components/TabContent';
 
 function App() {
-  const [opened, setOpened] = useState(false);
+  const [opened, { toggle, close }] = useDisclosure();
   const [activeTab, setActiveTab] = useState('about');
 
   // Custom black & white theme
@@ -28,9 +29,10 @@ function App() {
   };
 
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS theme={theme}>
+    <MantineProvider theme={theme}>
       <AppShell
-        aside={{ // Using aside instead of navbar
+        header={{ height: 60 }}
+        navbar={{ 
           width: 250,
           breakpoint: 'sm',
           collapsed: { desktop: true, mobile: !opened },
@@ -40,21 +42,21 @@ function App() {
         <AppShell.Header>
           <Navbar 
             opened={opened} 
-            setOpened={setOpened} 
+            setOpened={toggle} 
             activeTab={activeTab} 
             setActiveTab={setActiveTab} 
           />
         </AppShell.Header>
 
-        <AppShell.Aside>
+        <AppShell.Navbar>
           <MobileMenu 
             activeTab={activeTab} 
             setActiveTab={(value) => {
               setActiveTab(value);
-              setOpened(false);
+              close();
             }} 
           />
-        </AppShell.Aside>
+        </AppShell.Navbar>
 
         <AppShell.Main bg="brand.0">
           <Container size="xl" px="md" py="xl">

@@ -14,7 +14,7 @@ function AboutTab() {
   */
   return (
     <>
-    <Card shadow="xl" padding="xl" radius="lg" mb="md" bg="brand.8" c="brand.2">
+    <Card shadow="glow" padding="xl" radius="lg" mb="xl" bg="brand.8" c="brand.2">
       <Grid gutter={50} align="center">
         <Grid.Col span={{ base: 12, md: 6 }}>
           <Image 
@@ -35,7 +35,7 @@ function AboutTab() {
       </Grid>
     </Card>
 
-    <Card shadow="xl" padding="xl" radius="lg" mb="md" bg="brand.8" c="brand.2">
+    <Card shadow="glow" padding="xl" radius="lg" mb="md" bg="brand.8" c="brand.2">
       {/* A value of mt 30 means margin-top of 30 pixels */}
       <Grid gutter={50} align="center" mt={30}>
         <Grid.Col span={{ base: 12, md: 6 }}>

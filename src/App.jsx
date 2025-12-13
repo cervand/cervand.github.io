@@ -30,7 +30,6 @@ function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS theme={theme}>
       <AppShell
-        header={{ height: 60 }}
         aside={{ // Using aside instead of navbar
           width: 250,
           breakpoint: 'sm',
@@ -38,9 +37,7 @@ function App() {
         }}
         padding="md"
       >
-        <AppShell.Header
-          style={{ borderBottom: 0 }}
-        >
+        <AppShell.Header>
           <Navbar 
             opened={opened} 
             setOpened={setOpened} 
@@ -49,7 +46,7 @@ function App() {
           />
         </AppShell.Header>
 
-        <AppShell.Aside bg="transparent">
+        <AppShell.Aside>
           <MobileMenu 
             activeTab={activeTab} 
             setActiveTab={(value) => {
@@ -60,7 +57,7 @@ function App() {
         </AppShell.Aside>
 
         <AppShell.Main bg="brand.0">
-          <Container size="md" px="md" py="xl">
+          <Container size="xl" px="md" py="xl">
             <TabContent activeTab={activeTab} />
           </Container>
         </AppShell.Main>

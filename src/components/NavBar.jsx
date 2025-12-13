@@ -23,8 +23,8 @@ function NavBar({ opened, setOpened, activeTab, setActiveTab }) {
         color="brand.1"
       >
         <Tabs.List>
-          <Tabs.Tab value="experience">Experience</Tabs.Tab>
           <Tabs.Tab value="about">About</Tabs.Tab>
+          <Tabs.Tab value="experience">Experience</Tabs.Tab>
           <Tabs.Tab value="contact">Contact</Tabs.Tab>
         </Tabs.List>
       </Tabs>

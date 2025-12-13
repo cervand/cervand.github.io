@@ -11,8 +11,8 @@ function MobileMenu({ activeTab, setActiveTab }) {
         color="brand.1"
       >
         <Tabs.List>
-          <Tabs.Tab value="experience" mb="sm">Experience</Tabs.Tab>
           <Tabs.Tab value="about" mb="sm">About</Tabs.Tab>
+          <Tabs.Tab value="experience" mb="sm">Experience</Tabs.Tab>
           <Tabs.Tab value="contact" mb="sm">Contact</Tabs.Tab>
         </Tabs.List>
       </Tabs>

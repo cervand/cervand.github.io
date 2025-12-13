@@ -11,8 +11,8 @@ function TabContent({ activeTab }) {
       radius="md" 
       bg="brand.0" 
     >
-      {activeTab === 'experience' && <ExperienceTab />}
       {activeTab === 'about' && <AboutTab />}
+      {activeTab === 'experience' && <ExperienceTab />}
       {activeTab === 'contact' && <ContactTab />}
     </Paper>
   );

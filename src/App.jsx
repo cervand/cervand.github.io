@@ -8,7 +8,7 @@ import TabContent from './components/TabContent';
 
 function App() {
   const [opened, setOpened] = useState(false);
-  const [activeTab, setActiveTab] = useState('experience');
+  const [activeTab, setActiveTab] = useState('about');
 
   // Custom black & white theme
   const theme = {

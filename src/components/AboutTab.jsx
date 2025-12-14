@@ -25,7 +25,7 @@ function AboutTab() {
         </Grid.Col>
         <Grid.Col span={{ base: 12, md: 6 }}>
           <Stack>
-            <Title order={2} c="brand.2">Hi, I am Andres</Title>
+            <Title order={1} size="3.5rem" c="brand.2">Hi! I am Andres</Title>
             <Text c="brand.2">
               Someone excited to work hard on becoming a better engineer.
               This is a summary about me and my background.

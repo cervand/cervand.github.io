@@ -13,7 +13,7 @@ function NavBar({ opened, setOpened, activeTab, setActiveTab }) {
       c="brand.2"
     >
       <Title order={3} fw={700}>
-        Andres Cervantes
+        Welcome!
       </Title>
       <Tabs 
         value={activeTab} 
